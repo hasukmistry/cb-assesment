@@ -3,7 +3,7 @@ import ProductList from '../views/ProductList.vue';
 import StoreList from '../views/StoreList.vue';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/cb-assesment/'),
   routes: [
     {
       path: '/',
