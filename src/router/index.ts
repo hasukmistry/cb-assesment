@@ -10,26 +10,26 @@ const router = createRouter({
       name: 'products',
       component: ProductList,
       meta: {
-        title: 'Desktop - Product List'
-      }
+        title: 'Desktop - Product List',
+      },
     },
     {
       path: '/stores',
       name: 'stores',
       component: StoreList,
       meta: {
-        title: 'Desktop - Store List'
-      }
+        title: 'Desktop - Store List',
+      },
     },
   ],
 })
 
-router.beforeEach((to) => {
+router.beforeEach(to => {
   if (to.meta.title) {
-    document.title = to.meta.title as string;
+    document.title = to.meta.title as string
   } else {
-    document.title = 'Cold Banana Assessment';
+    document.title = 'Cold Banana Assessment'
   }
-});
+})
 
 export default router
