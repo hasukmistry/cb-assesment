@@ -1,0 +1,15 @@
+.cb-logo {
+  a {
+    font-size: 36px;
+    line-height: 54px;
+
+    &:focus {
+      outline: 1px solid;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

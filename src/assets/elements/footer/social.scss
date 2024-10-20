@@ -1,0 +1,25 @@
+ul.cb-socials {
+  column-gap: 38px;
+  row-gap: 22px;
+  flex-wrap: wrap;
+
+  li {
+    a {
+      flex: 1 1 calc(33.33%);
+      margin-bottom: 0px;
+      display: flex;
+      background: linear-gradient(90deg, #73e0a9 0%, #5b68df 100%);
+      height: 45px;
+      width: 45px;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.9;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.cb-map {
+  border-radius: 30px;
+  margin-top: 80px;
+  height: 414px;
+}
+
+.cb-store-list {
+  display: grid;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  column-gap: 86px;
+  row-gap: 72px;
+
+  grid-template-columns: 1fr;
+
+  .cb-store {
+    border-radius: 30px;
+
+    .cb-store-image-wrapper {
+      height: 269px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 30px;
+      box-shadow: 0px 8px 20px 0px #00000040;
+
+      a {
+        &:focus,
+        &:hover,
+        &:active {
+          img {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .cb-store-image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .cb-store-description {
+      padding: 25px;
+      box-shadow: 0px 4px 20px 5px #00000026;
+      border-radius: 30px;
+
+      a {
+        &:focus {
+          outline: 1px solid;
+        }
+
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+
+      a.cb-store-link {
+        display: flex;
+        color: #212121;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 11px;
+      }
+
+      a.cb-store-additional-link {
+        display: flex;
+        color: #212121;
+        font-size: 18px;
+        line-height: 27px;
+        column-gap: 12px;
+        margin-bottom: 21px;
+
+        image {
+          display: inline-flex;
+          height: 30px;
+          width: 30px;
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .cb-map {
+    margin-top: 150px;
+    height: 714px;
+  }
+
+  .cb-store-list {
+    margin-bottom: 180px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .cb-store {
+      height: 269px;
+
+      .cb-store-image-wrapper {
+        width: 214px;
+      }
+
+      .cb-store-description {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .cb-store {
+    .cb-store-description {
+      width: calc(100% - 214px);
+    }
+  }
+}

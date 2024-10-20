@@ -1,0 +1,56 @@
+.cb-footer-navigation {
+  div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+    background: linear-gradient(90.71deg, #73e0a9 0%, #5b68df 100%);
+    -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+    -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+    background-clip: text; /* Standard property for Firefox */
+    color: transparent; /* Fallback */
+    padding-bottom: 20px;
+  }
+
+  nav {
+    ul.cb-footer-nav-lists {
+      li {
+        a {
+          display: flex;
+          color: #212121;
+          margin-bottom: 10px;
+          margin-right: 10px;
+          font-size: 18px;
+          line-height: 27px;
+
+          &:focus {
+            outline: 1px solid;
+          }
+
+          &:hover,
+          &:active {
+            text-decoration: underline;
+          }
+        }
+
+        &:last-child {
+          a {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .cb-footer-navigation {
+    div {
+      width: 211px;
+      margin-bottom: 0px;
+    }
+  }
+}

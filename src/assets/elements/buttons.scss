@@ -1,0 +1,32 @@
+.cb-button-primary {
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(90deg, #73e0a9 0%, #5b68df 100%);
+  border-radius: 100px;
+
+  &--small {
+    font-size: 16px;
+    line-height: 24px;
+    width: 175px;
+    height: 40px;
+  }
+
+  &--large {
+    font-size: 22px;
+    line-height: 33px;
+    width: 249px;
+    height: 60px;
+  }
+
+  &:focus {
+    outline: 1px solid #212121;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.9;
+  }
+}
