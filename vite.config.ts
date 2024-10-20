@@ -1,6 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config';
 import vue from '@vitejs/plugin-vue'
 import svgr from 'vite-plugin-svgr';
 
@@ -10,6 +10,10 @@ export default defineConfig({
     vue(),
     svgr(),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

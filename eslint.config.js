@@ -13,6 +13,18 @@ export default [
     ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
   },
 
+  {
+    name: 'app/files-to-ignore',
+    ignores: [
+      '**/dist/**',
+      '**/dist-ssr/**',
+      '**/coverage/**',
+      '**/__tests__/**',
+      '**/*.spec.ts',
+      '**/*.test.ts',
+    ],
+  },
+
   ...pluginVue.configs['flat/essential'],
   ...vueTsEslintConfig(),
   skipFormatting,
