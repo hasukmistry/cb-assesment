@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { Location } from '@/types'
-import CbIconLocation from '@/components/svg/CbIconLocation.vue'
-import CbIconPin from '@/components/svg/CbIconPin.vue'
-import CbIconShare from '@/components/svg/CbIconShare.vue'
+import type { Location } from '@/types';
+import CbIconLocation from '@/components/svg/CbIconLocation.vue';
+import CbIconPin from '@/components/svg/CbIconPin.vue';
+import CbIconShare from '@/components/svg/CbIconShare.vue';
 
 defineProps<{
-  location: Location
-}>()
+  location: Location | null;
+}>();
 
 const trimString = (str: string): string => {
-  return str.length > 25 ? str.substring(0, 25) + '...' : str
-}
+  return str.length > 25 ? str.substring(0, 25) + '...' : str;
+};
 </script>
 
 <template>

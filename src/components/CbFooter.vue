@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import CbIconTelegram from '@/components/svg/CbIconTelegram.vue'
-import CbIconTwitter from '@/components/svg/CbIconTwitter.vue'
-import CbIconYoutube from '@/components/svg/CbIconYoutube.vue'
+import CbIconTelegram from '@/components/svg/CbIconTelegram.vue';
+import CbIconTwitter from '@/components/svg/CbIconTwitter.vue';
+import CbIconYoutube from '@/components/svg/CbIconYoutube.vue';
 
-import CbIconFacebook from '@/components/svg/CbIconFacebook.vue'
-import CbIconInstagram from '@/components/svg/CbIconInstagram.vue'
-import CbIconTiktok from '@/components/svg/CbIconTiktok.vue'
+import CbIconFacebook from '@/components/svg/CbIconFacebook.vue';
+import CbIconInstagram from '@/components/svg/CbIconInstagram.vue';
+import CbIconTiktok from '@/components/svg/CbIconTiktok.vue';
 </script>
 
 <template>

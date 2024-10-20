@@ -1,5 +1,5 @@
-import type { Product } from '@/types/product'
+import type { Product } from '@/types/product';
 
 export interface ProductStore {
-  products: Product[]
+  products: Product[];
 }

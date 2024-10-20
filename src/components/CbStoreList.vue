@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import { onMounted, computed, ref } from 'vue'
-import { useLocationsStore } from '@/stores/locations'
-import type { Location } from '@/types'
+import { onMounted, computed, ref } from 'vue';
+import { useLocationsStore } from '@/stores/locations';
+import type { Location } from '@/types';
 
-import '@/assets/elements/store-list.scss'
-import CbLoader from '@/components/CbLoader.vue'
-import CbMap from '@/components/CbMap.vue'
-import CbStoreSingle from '@/components/CbStoreSingle.vue'
+import '@/assets/elements/store-list.scss';
+import CbLoader from '@/components/CbLoader.vue';
+import CbMap from '@/components/CbMap.vue';
+import CbStoreSingle from '@/components/CbStoreSingle.vue';
 
-const isLoading = ref(true)
-const locations = useLocationsStore()
+const isLoading = ref(true);
+const locations = useLocationsStore();
 
 onMounted(async () => {
-  await locations.fetchLocations()
-  isLoading.value = false
-})
+  await locations.fetchLocations();
+  isLoading.value = false;
+});
 
-const locationList = computed((): Location[] => locations.locationList)
+const locationList = computed((): Location[] => locations.locationList);
 const locationsAvailable = computed(
   (): boolean => locationList.value.length > 0,
-)
+);
 </script>
 
 <template>

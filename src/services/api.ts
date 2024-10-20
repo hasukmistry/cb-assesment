@@ -1,5 +1,5 @@
-import request from '@/services/request'
-import { Response } from 'superagent'
+import request from '@/services/request';
+import { Response } from 'superagent';
 
 /**
  * Retrieve a list of products.
@@ -7,7 +7,7 @@ import { Response } from 'superagent'
  * @returns {Promise<Response>} The response with a list of products.
  */
 export function getProducts(): Promise<Response> {
-  return request.get('/products')
+  return request.get('/products');
 }
 
 /**
@@ -16,5 +16,5 @@ export function getProducts(): Promise<Response> {
  * @returns {Promise<Response<Location[]>>} The response with a list of locations.
  */
 export function getLocations(): Promise<Response> {
-  return request.get(`/locations`)
+  return request.get(`/locations`);
 }

@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import ProductList from '../views/ProductList.vue'
-import StoreList from '../views/StoreList.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import ProductList from '../views/ProductList.vue';
+import StoreList from '../views/StoreList.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,14 +22,14 @@ const router = createRouter({
       },
     },
   ],
-})
+});
 
 router.beforeEach(to => {
   if (to.meta.title) {
-    document.title = to.meta.title as string
+    document.title = to.meta.title as string;
   } else {
-    document.title = 'Cold Banana Assessment'
+    document.title = 'Cold Banana Assessment';
   }
-})
+});
 
-export default router
+export default router;
