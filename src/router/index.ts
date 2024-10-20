@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import ProductList from '../views/ProductList.vue';
 import StoreList from '../views/StoreList.vue';
 
 const router = createRouter({
-  history: createWebHistory('/cb-assesment/'),
+  history: createWebHashHistory(), // Use hash mode
   routes: [
     {
       path: '/',
