@@ -50,7 +50,7 @@
 
           <a
             role="button"
-            class="cb-button-primary cb-button-primary--large text-white"
+            class="flex cb-button-primary cb-button-primary--large text-white"
             href="#"
           >
             Read More

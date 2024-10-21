@@ -20,7 +20,7 @@
 
         <a
           role="button"
-          class="cb-button-primary cb-button-primary--small text-white"
+          class="flex cb-button-primary cb-button-primary--small text-white"
           href="#"
         >
           Read More
